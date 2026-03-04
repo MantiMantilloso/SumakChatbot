@@ -1,6 +1,6 @@
 # Sumak Chatbot
 
-Chatbot agrícola que utiliza embeddings de OpenAI y Pinecone como base de datos vectorial para responder consultas sobre problemas comunes en cultivos (síntomas, causas y manejo recomendado).
+Chatbot agrícola que utiliza embeddings de OpenAI y Pinecone como base de datos vectorial para responder consultas sobre problemas comunes en cultivos (síntomas, causas y manejo recomendado). El flujo logico esta implementado sobre n8n.
 
 ## Scripts
 
@@ -8,7 +8,6 @@ Chatbot agrícola que utiliza embeddings de OpenAI y Pinecone como base de datos
 |---|---|
 | `create_pinecone_index.py` | Crea el índice en Pinecone con las dimensiones necesarias para los embeddings de OpenAI. |
 | `flujo_embbedings.py` | Lee los problemas comunes desde CSV, genera embeddings con OpenAI (`text-embedding-3-small`) y los carga en Pinecone. |
-| `debugopenai.py` | Script auxiliar para verificar que la API key de OpenAI está configurada correctamente. |
 
 ## Configuración
 
