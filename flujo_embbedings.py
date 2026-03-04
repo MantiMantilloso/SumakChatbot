@@ -17,6 +17,8 @@ pc = Pinecone(api_key=PINECONE_API_KEY)
 client = OpenAI(api_key=OPENAI_API_KEY)
 index = pc.Index(INDEX_NAME)
 
+# ======== PROCESAMIENTO DE DATOS Y CREACIÓN DE EMBEDDINGS ========
+# Aqui ponemos los .csv con los problemas comunes
 df = pd.read_csv("nuevos_problemas.csv", encoding="utf-8")
 
 df["chunk_text"] = df.apply(
